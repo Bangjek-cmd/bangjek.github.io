@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="w3.css">
+    <title>Jeki | Satu Persen</title>
+</head>
+<body>
+    <!--Banner-->
+    <div class="w3-center">
+        <img src="OIP (5).jpg" alt="banner" width="50%" height="100%">
+    </div>
+
+    <!--Button-->
+    <div class="w3-container w3-center w3-black">
+        <div class="w3-bar w3-black">
+            <button class="w3-bar-item w3-button" onclick="openmenu('Beranda')">Beranda</button>
+            <button class="w3-bar-item w3-button" onclick="openmenu('tentang')">Tentang</button>
+            <button class="w3-bar-item w3-button" onclick="openmenu('layanan')">Layanan</button>
+            <button class="w3-bar-item w3-button" onclick="openmenu('training')">Training</button>
+            <button class="w3-bar-item w3-button" onclick="openmenu('profile')">Profile</button>
+            
+            <!---Dropdown Menu--->
+            <div class="w3-dropdown-click">
+                <button class="w3-button" onclick="openbar('Opacity')">Tes Psikologi</button>
+                <div id="Demo" class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <button class="w3-bar-item w3-button" onclick="openmenu('kurikulum')">Kurikulum</button>
+                    <button class="w3-bar-item w3-button" onclick="openmenu('kepribadian')">Kepribadian</button>
+                    <button class="w3-bar-item w3-button" onclick="openmenu('kesepian')">Kesepian</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!---Tampilan Awal-->
+<div class="w3-panel w3-center NamaMenu w3-animate-top"  style="display: block;">
+    <center>
+        <div class="w3-container w3-center" style="width: 80%;">
+            <span style="font-size:100px;opacity:0.2">&#10077;</span>
+            <h1>
+                <p style="margin-top:-60px">
+                    <b>#HidupSeutuhnya</b><br>
+                    Satu Persen hadir untuk mengajarkan kemampuan dan hal penting dalam menjalani hidup. Kami percaya,<b> setiap orang berhak berkembang, setidaknya 1% setiap hari</b> menuju #HidupSeutuhnya. 
+                </p>
+            </h1>
+        </div>
+    </center>
+</div>
+
+<!---Menu Beranda-->
+<div id="Beranda" class="w3-container NamaMenu w3-animate-top w3-center" style="display: none;">  
+        <h1 class="w3-round-xlarge w3-yellow">
+            <b>
+                <i>
+                    Satu Persen
+                </i>
+            </b>
+        </h1>
+        <p><h2>
+            Satu Persen-Indonesian Life School adalah startup pendidikan yang mengajarkan tentang pengetahuan dan kemampuan penting dalam hidup yang belum diajarkan di sekolah dan masyarakat luas. 
+        </p></h2>
+        <center>
+        <div class="w3-cell-row w3-container" style="width: 90%;">
+            <div class="w3-container w3-cell w3-cell-middle" style="width: 70%">
+                <p>
+                    <h1>
+                        <b>
+                            Kenalan dengan Kami, Yuk!
+                        </b>
+                    </h1>
+                    <h3 class="w3-monospace">
+                        Satu Persen-Indonesian Life School adalah startup pendidikan yang mengajarkan tentang pengetahuan dan kemampuan penting dalam hidup yang belum diajarkan di sekolah dan masyarakat luas. 
+                    </h3>
+                </p>
+            </div>
+            <div class="w3-container w3-cell w3-cell-middle">
+                <img src="b2.png" alt="satu persen" width="300px" height="300px">
+            </div>
+        </div>
+        </center>
+</div>
+
+<!---Menu Tentang-->
+<div id="tentang" class="w3-container NamaMenu w3-animate-zoom" style="display: none;">
+    <h1 class="w3-round-xlarge w3-yellow w3-center">
+        <b>Tentang Satu Persen</b>
+    </h1>
+    <br>
+    <p>
+        <h2>
+            PT Satu Persen Edukasi (Satu Persen) adalah perseroan terbatas yang bergerak di bidang kesehatan mental. Satu Persen merupakan badan hukum yang sah dan didirikan berdasarkan ketentuan hukum yang berlaku di Indonesia.
+            <br><br>
+            Satu Persen menawarkan berbagai layanan seputar kesehatan mental dan pengembangan diri, di antaranya Webinar, Kelas Online, Mentoring, Konseling, dan Basic Mental Health Training. Dengan lebih dari 25 topik Webinar dan Kelas Online, lebih dari 40 orang mentor dan psikolog, lebih dari 270 ribu pengguna aktif setiap bulan, serta lebih dari 1 juta pengikut di sosial media, menjadikan Satu Persen sebagai Life School terbesar di Indonesia.
+            <br><br>
+            Satu Persen bermula dari sebuah channel Youtube yang dimiliki oleh Ifandi Khainur Rahim, salah satu founder Satu Persen. Pada pertengahan 2019, Satu Persen telah menjadi startup berkat Evan dan Rizky, founders Satu Persen.
+        </h2>
+    </p>
+</div>
+
+<!--Menu Bacic Mental Health-->
+<div id="training" class="w3-container NamaMenu w3-animate-bottom w3-center" style="display: none;">
+    <img src="b.png" alt="basic mental health" width="70%">
+    <img src="b1.png" alt="basic mental health" width="70%">
+</div>
+
+<!---Menu Layanan-->
+<div id="layanan" class="w3-container NamaMenu w3-animate-zoom" style="display: none;">
+
+    <h1 class="w3-round-xlarge w3-yellow w3-center">
+        <b><i>Layanan Satu Persen</i></b>
+    </h1>
+    <h2>
+        <p>
+            Satu Persen mengembangkan suatu platform terpusat dimana semua layanan Satu Persen berada di platform tersebut.
+        </p>
+    </h2>
+    <br>
+    <h1>
+        <b>Webinar</b>
+    </h1>
+    <h2>
+        <p>
+            Webinar Satu Persen adalah kegiatan pembelajaran secara langsung melalui platform Zoom bersama mentor dan psikolog handal Satu Persen. Satu Persen memiliki lebih dari 25 topik Webinar dan Kelas Online yang membahas seputar pengembangan diri dan kesehatan mental yang telah diikuti oleh ribuan peserta.
+        </p>
+    </h2>
+    <br>
+    <h1>
+        <b>Kelas Online</b>
+    </h1>
+    <h2>
+        <p>
+            Kelas Online Satu Persen adalah kegiatan pembelajaran online bersama mentor dan psikolog handal Satu Persen untuk membantumu mengenali dan mengembangkan diri menjadi lebih baik secara praktis dan fleksibel. Ribuan peserta telah mengikuti lebih dari 25 topik Webinar dan Kelas Online Satu Persen.
+        </p>
+    </h2>
+    <br>
+    <h1>
+        <b>Mentoring</b>
+    </h1>
+    <h2>
+        <p>
+            Layanan Mentoring Satu Persen adalah layanan konsultasi yang diberikan oleh mentoring terlatih Satu Persen yang merupakan lulusan S1 Psikologi yang merupakan mentor terlatih Satu Persen. Mentoring melayani sesi konsultasi untuk masalah yang bersifat non-klinis. Masalah yang umum dibahas seperti kepercayaan diri, pekerjaan, pertemanan dan keluarga, masa depan, percintaan, pengenalan diri, dan masih banyak masalah lainnya.
+        </p>
+    </h2>
+    <br>
+    <h1>
+        <b>Konseling</b>
+    </h1>
+    <h2>
+        <p>
+            Layanan Konseling Satu Persen adalah layanan konsultasi yang diberikan oleh Psikolog yang merupakan lulusan S2 Profesi Psikolog Klinis Dewasa dan memegang izin praktik yang sah. Konsultasi yang diberikan dalam layanan Konseling adalah konsultasi untuk masalah yang bersifat klinis, seperti trauma, depresi, anxiety, bipolar, masalah seksualitas, dan berbagai masalah klinis lain.
+        </p>
+    </h2>
+    <br>
+    <h1>
+        <b>Basic Mental Health Training</b>
+    </h1>
+    <h2>
+        <p>
+            Basic Mental Health Training adalah pelatihan keterampilan dasar psikologis secara terstruktur yang diberikan oleh psikolog dan mentor Satu Persen, yang dapat diikuti oleh pihak manapun, baik yang berlatar belakang psikologi maupun tidak tidak.
+        </p>
+    </h2>
+
+</div>
+
+<!--Menu Profile-->
+<div id="profile" class="w3-card-4 NamaMenu w3-animate-fading" style="display: none;">
+    <div class="w3-container w3-cursive w3-center"">
+    <img src="avatar3.png" alt="Zaki" style="width: 20%;" class="w3-card-4">
+        <h1>
+            <br>
+            Nama: Muhammad Zaki Fawwaz
+            <br>
+            NIM: 10122159
+            <br>
+            Kelas: IF-5
+        </h1>
+    </div>
+</div>
+
+<!--Menu Tes Psikologi-->
+<div id="kurikulum" class="w3-container w3-card-4 NamaMenu w3-round-xlarge w3-animate-zoom" style="display: none;">
+    <center>
+        <img src="desain.png" alt="Kurikulum">
+    </center>
+    <h1>
+        <b>
+            Tes Level Kurikulum Satu Persen
+        </b>
+    </h1>
+    <br>
+    <h3 class="w3-opacity">
+        Bagaimana kondisi kehidupanmu saat ini? Pada aspek kehidupan apa saja kamu memiliki risiko maupun kekuatan? Aspek apa saja yang harus ditingkatkan dan dipertahankan dalam kehidupanmu? Yuk, ketahui hal tersebut melalui tes Kurikulum Satu Persen!
+    </h3>
+    <br><br>
+    <center>
+        <a href="https://satupersen.net/quiz/tes-kurikulum-satu-persen/start" class="w3-btn w3-yellow w3-round-xlarge" style="width: 50%;"><b>Ikuti Les</b></a>
+    </center>
+</div>
+
+<!--Tes Kepribadian-->
+<div id="kepribadian" class="w3-container NamaMenu w3-card-4 w3-round-xlarge w3-animate-zoom" style="display: none;">
+    <center>
+        <img src="whats.jpeg" alt="Kepribadian" style="width: 50%;">
+    </center>
+    <h1>
+        <b>
+            Tes Kepribadian MBTI Bahasa Indonesia: Kenali Dirimu!
+        </b>
+    </h1>
+    <br>
+    <h3 class="w3-opacity">
+        Tes MBTI ini bertujuan untuk menemukan diri dalam 16 tipe kepribadian MBTI. Kenali lebih jauh dirimu untuk berkembang setidaknya satu persen setiap harinya!
+    </h3>
+    <br><br>
+    <center>
+        <a href="https://satupersen.net/quiz/tes-kepribadian-mbti/start" class="w3-btn w3-yellow w3-round-xlarge" style="width: 50%;"><b>Ikuti Tes</b></a>
+    </center>
+</div>
+
+<!--Tes Tingkat Rasa Kesepian-->
+<div id="kesepian" class="w3-container NamaMenu w3-card-4 w3-round-xlarge w3-animate-zoom" style="display: none;">
+    <center>
+        <img src="whats_.jpeg" alt="Kesepian" style="width: 50%;">
+    </center>
+    <h1>
+        <b>
+            Tes Tingkat Rasa Kesepian: Loneliness Scale
+        </b>
+    </h1>
+    <br>
+    <h3 class="w3-opacity">
+        Rasa kesepian yang tinggi dikhawatirkan dapat memicu masalah terhadap kesehatan mental kamu. Cek tingkat kesepianmu sebagai langkah awal dalam mengurangi risiko.
+    </h3>
+    <br><br>
+    <center>
+        <a href="https://satupersen.net/quiz/tes-loneliness-scale/start" class="w3-btn w3-yellow w3-round-xlarge" style="width: 50%;"><b>Ikuti Tes</b></a>
+    </center>
+</div>
+
+<!--script-->
+    <script>
+        function openmenu(NamaMenu) {
+            var i;
+            var x = document.getElementsByClassName("NamaMenu");
+        
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+        
+            document.getElementById(NamaMenu).style.display = "block";
+        }
+
+        function openbar() {
+        var x = document.getElementById("Demo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else { 
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+        </script>
+
+</body>
+</html>
